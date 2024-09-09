@@ -6,6 +6,6 @@ RUN curl https://dl.min.io/client/mc/release/linux-amd64/mc \
 #
 RUN chmod +x $HOME/minio-binaries/mc
 #RUN export PATH=$PATH:$HOME/minio-binaries/
-ENV PATH="$PATH:$HOME/minio-binaries/"
+ENV PATH="$PATH:$HOME/minio-binaries/mc"
 RUN echo "export PATH=$PATH" > /etc/environment
 #
